@@ -1,0 +1,15 @@
+﻿@model DemoMVCApp1.ViewModels.EmployeeViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.PageTitle</h2>
+
+<ul>
+    <li> Employee Id : @Model.Employee.Id</li>
+    <li> Name : @Model.Employee.Name</li>
+    <li> Designation :@Model.Employee.Designation</li>
+    <li>City : @Model.Address.City</li>
+    <li> State : @Model.Address.State</li>
+    <li> Country :  @Model.Address.Country</li>
+</ul>

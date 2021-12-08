@@ -1,0 +1,57 @@
+﻿@using HtmlHelpersDemo1.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2>  Html Helpers Demonstration</h2>
+
+@*<input type="text" id="fname" name="fname" />*@
+@Html.TextBox("firstname", "Jk Teck")
+
+<br />
+<br />
+@*<input type="text" id="fname" name="fname" style="color:aliceblue; background-color:brown; font-weight:bold;"/>*@
+@*@Html.TextBox("lastname","Geetha",new  {style= "color:aliceblue; background-color:brown; font-weight:bold;"})*@
+
+@Html.Label("username", "Enter the Username")
+@Html.TextBox("username", "Sample text", new { @class = "textbox", @readonly = "true" })
+<br />
+<br />
+@Html.Label("password", "Enter the Password");
+@Html.Password("password");
+<br />
+<br />
+@Html.Label("address", "Enter the Address");
+@Html.TextArea("address", "", 4, 20, null);
+<br />
+<br />
+@Html.Hidden("empid")
+
+<br />
+<br />
+@* example for dropdown with harcodede values *@
+
+@*@Html.Label("departments","Select the Department")
+    @Html.DropDownList("departments",new List<SelectListItem>
+    { new SelectListItem {Text="IT",Value="1"},
+    new SelectListItem {Text="HR", Value="2"},
+    new SelectListItem{Text="Admin",Value="3"}
+    },"Select Department")*@
+
+@* example for dropdown with viewbag from controller *@
+
+@Html.Label("departments", "Select the Department")
+@Html.DropDownList("departments", "Select Department")
+<br />
+<br />
+
+@*@Html.Label("Gender", "Select the Gender")
+    @Html.DropDownList("Gender", new SelectList(Enum.GetValues(typeof(Gender))),
+        "Select Gender", new { @class = "form-control" })*@
+<br />
+<br />
+
+@Html.Label("Gender", "Select the Gender")
+@Html.RadioButton("Gender","Male",new { @checked = "true" }) Male
+@Html.RadioButton("Gender","Female")Female

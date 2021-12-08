@@ -1,0 +1,37 @@
+﻿@using HtmlHelpersDemo1.Models
+
+@model Employee
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<div class="container">
+    @using (Html.BeginForm())
+    {
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.EmployeeId)
+            @Html.TextBoxFor(m => m.EmployeeId, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.EmployeeName)
+            @Html.TextBoxFor(m => m.EmployeeName, new { @class = "form-control" })
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.DepartmentId)
+            @*@Html.DropDownList("Departments",new SelectList(ViewBag.departments, "Id","Name"),"select Department", new { @class = "form-control" }) </td>*@
+            @Html.DropDownListFor(m => m.DepartmentId, new SelectList(ViewBag.departments, "Id", "Name"), "select Department", new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Gender)
+            @Html.DropDownListFor(m => m.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "Select Gender", new { @class = "form-control" })
+        </div>
+
+        <input type="Submit" value="Create" />
+
+    }
+</div>

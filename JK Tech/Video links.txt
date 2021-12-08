@@ -1,0 +1,46 @@
+https://www.dotnettricks.com/learn/mvc/video/mvc5-with-visual-studio-2019
+
+skip from 20:30 to 32:00 minutes
+
+types of result sets in MVC:
+==============================
+https://www.youtube.com/watch?v=6MoItemiS1U&ab_channel=BestDotNetTraining
+
+https://www.youtube.com/watch?v=6V21iFhga4I&ab_channel=ShrimantTelgave
+
+HTML helpers:
+=============
+https://www.youtube.com/watch?v=g22RwdF4Fvs&ab_channel=AshishTiwary
+https://www.youtube.com/watch?v=4RV9u85o2kw&ab_channel=DotNetTricks
+
+validation using DataAnnotation:
+==================================
+https://www.youtube.com/watch?v=N3vH0fLqU6A&ab_channel=YogeshSharma
+
+
+Action -Selectors:
+==================
+https://www.youtube.com/watch?v=YOn5p-1KIJ8&ab_channel=BestDotNetTraining
+
+display, displayName, displayFormat Attribute:
+===============================================
+https://www.youtube.com/watch?v=PIZ5e3JdeLk&ab_channel=KusumNetDevendraNikam
+
+
+http://technotipstutorial.blogspot.com/2016/11/part-11-insert-data-into-database-in-as.html
+
+Action Filters:
+===============
+https://www.youtube.com/watch?v=nNps1VorqtE&list=RDCMUCzWd8lsefYoh42OCrg6FzuQ&index=1&ab_channel=BestDotNetTraining
+
+Authentication and Authorization:
+----------------------------------
+https://www.youtube.com/watch?v=7m6pY8Bpxj4&ab_channel=maheshpanhale
+
+Custom Authorization:
+-------------------
+https://www.youtube.com/watch?v=f9eNjLPM-_o&ab_channel=20Fingers2Brains
+
+Enterprise Library Vaidation:
+============================
+https://damienbod.com/2013/08/01/validation-in-mvc-enterprise-library-fluent-validation-data-annotations-foolproof/
